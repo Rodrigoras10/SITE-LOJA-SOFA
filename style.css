@@ -20,15 +20,25 @@ header {
   text-align: center;
 }
 
+.menu-toggle {
+  display: none;
+  background-color: #5a3e36;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 18px;
+  margin: 10px auto;
+  cursor: pointer;
+}
+
 nav ul {
   list-style: none;
   padding: 0;
   margin: 0;
-}
-
-nav ul li {
-  display: inline;
-  margin: 0 15px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
 }
 
 nav ul li a {
@@ -48,7 +58,7 @@ nav ul li a {
   height: auto;
 }
 
-/* Seção Sobre Nós */
+/* Seção Sobre Nós e Contato */
 #sobre,
 #contato {
   flex: 1;
@@ -83,14 +93,13 @@ nav ul li a {
   font-weight: bold;
 }
 
-#endereco {
-    text-align: center;
-    margin-top: 30px;
-}
-
-
 #contato a:hover {
   text-decoration: underline;
+}
+
+#endereco {
+  text-align: center;
+  margin-top: 30px;
 }
 
 /* Rodapé */
@@ -134,11 +143,10 @@ footer p {
   margin-right: 10px;
 }
 
-
 /* Catálogo */
 .catalogo-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 colunas fixas */
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   padding: 20px;
   max-width: 1200px;
@@ -335,28 +343,36 @@ button:active, .btn-detalhes:active {
   font-weight: bold;
   cursor: pointer;
 }
-.menu-toggle {
-    display: none;
-}
 
-
-/* Exibir o botão apenas em telas pequenas */
+/* Responsivo */
 @media (max-width: 768px) {
-    .menu-toggle {
-        display: block;
-        background-color: #5a3e36;
-        color: white;
-        border: none;
-        padding: 10px;
-        border-radius: 50%;
-        font-size: 18px;
-        margin: 10px auto;
-    }
+  .menu-toggle {
+    display: block;
+  }
 
-    nav ul {
-        display: none; /* Esconde o menu normal */
-    }
+  nav ul {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .catalogo-container {
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
+
+  .categoria {
+    font-size: 18px;
+    padding: 10px 15px;
+  }
+
+  .produto {
+    padding: 15px;
+  }
+
+  .titulo-catalogo {
+    font-size: 1.8rem;
+  }
 }
-
-
-
