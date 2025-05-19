@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo - Confortline Estofados</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <button class="menu-toggle">☰</button>
+      <ul></ul>
+    </nav>
+  </header>
+
+  <div class="categorias">
+    <a href="catalogo.html" class="categoria ativa">Estofados</a>
+    <a href="poltronas.html" class="categoria">Poltronas</a>
+  </div>
+
+  <section id="poltronas">
+    <h2 class="titulo-catalogo">Poltronas</h2>
+    <div class="catalogo-container">
+      
+     
+      <div class="produto">
+        <div class="imagem-produto">
+          <img id="imagem-OREGON1" src="IMAGENS/POLTRONA OREGON1.jpg" alt="OREGON" class="imagem-principal" onclick="abrirImagemModal(this.src)">
+          <div class="cores">
+            <img class="thumb" src="IMAGENS/POLTRONA OREGON1.jpg" alt="Cor 1" onclick="trocarImagem('imagem-OREGON1', 'IMAGENS/POLTRONA OREGON1.jpg')">
+            <img class="thumb" src="IMAGENS/POLTRONA OREGON1.jpg" alt="Cor 2" onclick="trocarImagem('imagem-OREGON1', 'IMAGENS/POLTRONA OREGON1.jpg')">
+            <img class="thumb" src="IMAGENS/POLTRONA OREGON1.jpg" alt="Cor 3" onclick="trocarImagem('imagem-OREGON1', 'IMAGENS/POLTRONA OREGON1.jpg')">
+            <img class="thumb" src="IMAGENS/POLTRONA OREGON1.jpg" alt="Cor 4" onclick="trocarImagem('imagem-OREGON1', 'IMAGENS/POLTRONA OREGON1.jpg')">
+          </div>
+        </div>
+        <h3>OREGON</h3>
+        <p>A Poltrona Oregon oferece uma combinação irresistível de modernidade e conforto.</p>
+        <button onclick="abrirModal('modal-oregon')">Ver Detalhes</button>
+      </div>
+
+   
+      <div class="produto">
+        <div class="imagem-produto">
+          <img id="imagem-OREGON2" src="IMAGENS/POLTRONA OREGON1.jpg" alt="OREGON" class="imagem-principal" onclick="abrirImagemModal(this.src)">
+          <div class="cores">
+            <img class="thumb" src="IMAGENS/POLTRONA OREGON1.jpg" alt="Cor 1" onclick="trocarImagem('imagem-OREGON2', 'IMAGENS/POLTRONA OREGON1.jpg')">
+            <img class="thumb" src="IMAGENS/POLTRONA OREGON1.jpg" alt="Cor 2" onclick="trocarImagem('imagem-OREGON2', 'IMAGENS/POLTRONA OREGON1.jpg')">
+            <img class="thumb" src="IMAGENS/POLTRONA OREGON1.jpg" alt="Cor 3" onclick="trocarImagem('imagem-OREGON2', 'IMAGENS/POLTRONA OREGON1.jpg')">
+            <img class="thumb" src="IMAGENS/POLTRONA OREGON1.jpg" alt="Cor 4" onclick="trocarImagem('imagem-OREGON2', 'IMAGENS/POLTRONA OREGON1.jpg')">
+          </div>
+        </div>
+        <h3>OREGON</h3>
+        <p>A Poltrona Oregon oferece uma combinação irresistível de modernidade e conforto.</p>
+        <button onclick="abrirModal('modal-oregon')">Ver Detalhes</button>
+      </div>
+
+  
+      <div class="produto">
+        <div class="imagem-produto">
+          <img id="imagem-OREGON3" src="IMAGENS/POLTRONA OREGON1.jpg" alt="OREGON" class="imagem-principal" onclick="abrirImagemModal(this.src)">
+          <div class="cores">
+            <img class="thumb" src="IMAGENS/POLTRONA OREGON1.jpg" alt="Cor 1" onclick="trocarImagem('imagem-OREGON3', 'IMAGENS/POLTRONA OREGON1.jpg')">
+            <img class="thumb" src="IMAGENS/POLTRONA OREGON1.jpg" alt="Cor 2" onclick="trocarImagem('imagem-OREGON3', 'IMAGENS/POLTRONA OREGON1.jpg')">
+            <img class="thumb" src="IMAGENS/POLTRONA OREGON1.jpg" alt="Cor 3" onclick="trocarImagem('imagem-OREGON3', 'IMAGENS/POLTRONA OREGON1.jpg')">
+            <img class="thumb" src="IMAGENS/POLTRONA OREGON1.jpg" alt="Cor 4" onclick="trocarImagem('imagem-OREGON3', 'IMAGENS/POLTRONA OREGON1.jpg')">
+          </div>
+        </div>
+        <h3>OREGON</h3>
+        <p>A Poltrona Oregon oferece uma combinação irresistível de modernidade e conforto.</p>
+        <button onclick="abrirModal('modal-oregon')">Ver Detalhes</button>
+      </div>
+
+    </div>
+  </section>
+
+
+  <div id="modal-oregon" class="modal" style="display: none;">
+    <div class="modal-conteudo">
+      <span class="fechar" onclick="fecharModal('modal-oregon')">&times;</span>
+      <h2>Ficha Técnica - OREGON</h2>
+      <ul>
+        <li><strong>RETRÁTIL/RECLINÁVEL</strong></li>
+        <li><strong>Estrutura:</strong> Eucalipto tratado de reflorestamento ecológico</li>
+        <li><strong>Encosto:</strong> Fixo com percintas elásticas, Espumas D-26</li>
+        <li><strong>Assento:</strong> Fixo com percintas elásticas, Espumas D-26</li>
+        <li><strong>Tecido (Opções):</strong>
+          <ul>
+            <li>Veludo Joli (TC 100)</li>
+            <li>Linho Bouclé (TC 200)</li>
+            <li>Ferrara (TC 300)</li>
+            <li>Nobuck (TC 400)</li>
+          </ul>
+        </li>
+        <li><strong>Dimensões:</strong> 0.92 x 1.74 x 0.80 (ALTURA x LARGURA x PROFUNDIDADE)</li>
+      </ul>
+    </div>
+  </div>
+
+
+  <div id="modalImagem" class="modal-imagem" style="display: none;">
+    <span class="fechar-modal" onclick="fecharImagemModal()">&times;</span>
+    <img class="modal-conteudo" id="imagemAmpliada">
+  </div>
+
+  <script>
+    function trocarImagem(idImagem, novaSrc) {
+      document.getElementById(idImagem).src = novaSrc;
+    }
+
+    function abrirModal(id) {
+      document.getElementById(id).style.display = 'block';
+    }
+
+    function fecharModal(id) {
+      document.getElementById(id).style.display = 'none';
+    }
+
+    function abrirImagemModal(src) {
+      const modal = document.getElementById('modalImagem');
+      const imgModal = document.getElementById('imagemAmpliada');
+      imgModal.src = src;
+      modal.style.display = 'block';
+    }
+
+    function fecharImagemModal() {
+      const modal = document.getElementById('modalImagem');
+      modal.style.display = 'none';
+    }
+  </script>
+</body>
+</html>
