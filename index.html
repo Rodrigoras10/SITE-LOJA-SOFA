@@ -35,6 +35,18 @@
 
   
     <script src="script.js"></script>
+<script>
+  const toggleButton = document.querySelector('.menu-toggle');
+  const navMenu = document.querySelector('nav ul');
+
+  toggleButton.addEventListener('click', () => {
+    navMenu.style.display = navMenu.style.display === 'flex' ? 'none' : 'flex';
+    navMenu.style.flexDirection = 'column';
+    navMenu.style.alignItems = 'center';
+    navMenu.style.marginTop = '10px';
+    navMenu.style.gap = '10px';
+  });
+</script>
 
 </body>
 </html>
